@@ -30,6 +30,24 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .hero h1{font-family:var(--serif);font-size:clamp(3.5rem,6vw,5.5rem);font-weight:700;line-height:1.0;animation:fadeUp 0.8s 0.1s ease both;}
 .hero h1 .first{display:block;color:var(--text);}
 .hero h1 .last{display:block;color:transparent;-webkit-text-stroke:1px var(--gold);}
+
+/* --- NEW CSS FOR THE PHOTO --- */
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%; /* Circle shape */
+  border: 2px solid var(--gold); /* Thin gold border */
+  padding: 5px; /* Creates space for the inner glow effect */
+  background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Deep shadow for pop */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.8s 0.2s ease both; /* Syncs with h1 animation */
+  display: block; /* Ensures it starts on a new line on smaller screens */
+}
+/* --- END NEW CSS --- */
+
 .hero-divider{width:1px;height:48px;background:linear-gradient(to bottom,var(--gold),transparent);margin:2rem 0;animation:fadeUp 0.8s 0.2s ease both;}
 .hero-role{font-size:1.05rem;font-weight:300;color:var(--text2);line-height:1.5;animation:fadeUp 0.8s 0.3s ease both;}
 .hero-role strong{color:var(--text);font-weight:500;}
@@ -170,6 +188,9 @@ footer{position:relative;z-index:1;max-width:1300px;margin:0 auto;padding:2rem 4
       <div class="eyebrow-line"></div>
       <span class="eyebrow-text">SDET · Automation Engineer</span>
     </div>
+    
+    <img src="profile.jpg" alt="Mohit Ojha" class="hero-photo" />
+    
     <h1><span class="first">Mohit</span><span class="last">Ojha</span></h1>
     <div class="hero-divider"></div>
     <div class="hero-role"><strong>5.6 years</strong> crafting scalable automation frameworks —<br/>currently at <strong>Tata Consultancy Services</strong>, Kolkata</div>
